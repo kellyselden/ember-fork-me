@@ -1,0 +1,1 @@
+export { default } from 'ember-fork-me/components/fork-me';
