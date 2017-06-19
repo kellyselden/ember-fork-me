@@ -11,6 +11,12 @@ Demo: http://kellyselden.github.io/ember-fork-me
 
 Wraps [this](https://github.com/simonwhitaker/github-fork-ribbon-css) library
 
+## Installation
+
+```sh
+ember install ember-fork-me
+```
+
 ## Usage
 
 ```hbs
