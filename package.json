@@ -49,6 +49,6 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
-    "demoURL": "http://kellyselden.github.io/ember-fork-me"
+    "demoURL": "https://kellyselden.github.io/ember-fork-me"
   }
 }
