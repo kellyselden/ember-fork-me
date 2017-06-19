@@ -7,7 +7,7 @@
 
 Ember component for "Fork me on GitHub" banner
 
-Demo: http://kellyselden.github.io/ember-fork-me
+Demo: https://kellyselden.github.io/ember-fork-me
 
 Wraps [this](https://github.com/simonwhitaker/github-fork-ribbon-css) library
 
