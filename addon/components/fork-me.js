@@ -1,9 +1,5 @@
-import Ember from 'ember';
+import Component from '@ember/component';
 import layout from '../templates/components/fork-me';
-
-const {
-  Component
-} = Ember;
 
 const MyComponent = Component.extend({
   layout,
