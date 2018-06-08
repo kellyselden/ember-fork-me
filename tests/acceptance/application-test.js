@@ -1,15 +1,16 @@
-import { test } from 'qunit';
-import moduleForAcceptance from '../../tests/helpers/module-for-acceptance';
+import { visit, find } from '@ember/test-helpers';
+import { module, test } from 'qunit';
+import { setupApplicationTest } from 'ember-qunit';
 
-moduleForAcceptance('Acceptance | application');
+module('Acceptance | application', function(hooks) {
+  setupApplicationTest(hooks);
 
-test('visiting /', function(assert) {
-  visit('/');
+  test('visiting /', async function(assert) {
+    await visit('/');
 
-  andThen(function() {
     let ribbon = find('.github-fork-ribbon');
-    assert.equal(ribbon.attr('href'), 'https://github.com/kellyselden/ember-fork-me');
-    assert.equal(ribbon.attr('title'), 'Fork me on GitHub');
-    assert.equal(ribbon.text(), 'Fork me on GitHub');
+    assert.equal(ribbon.getAttribute('href'), 'https://github.com/kellyselden/ember-fork-me');
+    assert.equal(ribbon.getAttribute('title'), 'Fork me on GitHub');
+    assert.equal(ribbon.textContent.trim(), 'Fork me on GitHub');
   });
 });
