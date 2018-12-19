@@ -1,6 +1,6 @@
 {
   "name": "ember-fork-me",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Ember component for \"Fork me on GitHub\" banner",
   "keywords": [
     "ember-addon",
